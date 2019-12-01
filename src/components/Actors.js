@@ -5,8 +5,8 @@ const Actors = () => {
   return (
     <div>
       <h1>Actors Page</h1>
-      {actors.map(actor => 
-        <div>
+      {actors.map((actor, index) => 
+        <div key={index}>
           <h2>Name: {actor.name}</h2>
           <h3>Movies:</h3>
           <ul>
